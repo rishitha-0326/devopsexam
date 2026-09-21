@@ -20,7 +20,7 @@ pipeline {
                 bat '''
                     docker stop registration-app
                     docker rm registration-app
-                    docker run -d --name registration-app -p 5000:5000 registration-app
+                    docker run -d --name registration-app -p 5001:5000 registration-app
                 '''
             }
         }
